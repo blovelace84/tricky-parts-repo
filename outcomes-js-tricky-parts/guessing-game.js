@@ -3,6 +3,9 @@ function guessingGame() {
    let isOver = false;
    let numGuesses = 0;
 
+
+
+
    return function guess(num){
     if(isOver) return "This game is over, you won already!";
     numGuesses++;
@@ -15,5 +18,7 @@ function guessingGame() {
     if (num < answer) return `${num} is too high!`;
    };
 }
+
+
 
 module.exports = { guessingGame };
