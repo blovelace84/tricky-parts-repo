@@ -1,5 +1,5 @@
 function guessingGame() {
-   const answer = Math.floor(Math.random() *100);
+   const answer = Math.floor(Math.random() * 100);
    let isOver = false;
    let numGuesses = 0;
 
@@ -9,7 +9,7 @@ function guessingGame() {
     if( num === answer){
         isOver = true;
         const guess = numGuesses === 1 ? "guess" : "guesses";
-        return `You won! You found${num} in ${numGuesses} ${guess}`;
+        return `You won! You found${num} in ${numGuesses} ${guess}.`;
     }
     if(num > answer) return `${num} is too low!`;
     if (num < answer) return `${num} is too high!`;
